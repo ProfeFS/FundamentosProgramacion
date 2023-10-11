@@ -7,6 +7,7 @@ public class ConversorMonedas {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
+		String nombre;
 
 		System.out.println("Ingrese la cantidad de dinero en dólares:");
 		double dolares = scanner.nextDouble();

@@ -13,7 +13,7 @@ public class EjercicioIMC {
 	        System.out.println("Ingrese su altura en metros:");
 	        double altura = scanner.nextDouble();
 	        
-	        double imc = peso / (altura * altura);
+	        double imc = peso / Math.pow(altura, 2); //(altura * altura);
 	        
 	        if (imc < 18.5) {
 	            System.out.println("Bajo de peso");
