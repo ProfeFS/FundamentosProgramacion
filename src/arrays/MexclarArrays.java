@@ -6,6 +6,7 @@ public class MexclarArrays {
 		
 		String[] frutas1= {"Peras", "Manzanas", "Arándanos", "Mango"};
 		String[] frutas2= {"Quiwi", "Fresas", "Frambuesas"};
+		
 		String[] mixedFruits = new String[frutas1.length+frutas2.length];
 		int j=0;
 		
