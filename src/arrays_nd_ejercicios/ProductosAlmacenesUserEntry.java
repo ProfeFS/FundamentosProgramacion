@@ -38,5 +38,7 @@ public class ProductosAlmacenesUserEntry {
             }
             System.out.println();
         }
+        
+        sc.close();
     }
 }

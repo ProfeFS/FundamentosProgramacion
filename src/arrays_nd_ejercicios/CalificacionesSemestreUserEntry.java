@@ -25,5 +25,7 @@ public class CalificacionesSemestreUserEntry {
 			}
 			System.out.println();
 		}
+		
+		sc.close();
 	}
 }

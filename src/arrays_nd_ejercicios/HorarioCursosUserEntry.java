@@ -56,6 +56,8 @@ public class HorarioCursosUserEntry {
 			}
 			System.out.println();
 		}
+		
+		sc.close();
 
 	}
 }
