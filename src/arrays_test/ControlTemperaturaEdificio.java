@@ -54,14 +54,20 @@ public class ControlTemperaturaEdificio {
 
 		// Calcular y mostrar la temperatura promedio del edificio
 		float sumaTemperaturas = 0;
+		float sumaTemperaturasPiso;
 		int contador = 0;
-		for (int piso = 0; piso < numPisos; piso++) {
-			for (int habitacion = 0; habitacion < numHabitaciones; habitacion++) {
-				for (int momento = 0; momento < 3; momento++) {
-					sumaTemperaturas += temperaturas[piso][habitacion][momento];
+		
+		for (int i = 0; i < numPisos; i++) {
+			sumaTemperaturasPiso = 0;
+			for (int j = 0; j < numHabitaciones; j++) {
+				for (int k = 0; k < 3; k++) {
+					sumaTemperaturas += temperaturas[i][j][k];
+					sumaTemperaturasPiso += temperaturas[i][j][k];
 					contador++;
 				}
 			}
+			System.out.println("Temperatura promedio en el piso " + (i + 1) + ": "
+					+ (sumaTemperaturasPiso / (numHabitaciones * 3)));
 		}
 		float promedio = sumaTemperaturas / contador;
 		System.out.println("Temperatura promedio en el edificio: " + promedio);
